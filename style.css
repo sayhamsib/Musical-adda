@@ -11,9 +11,12 @@ body{
     display: flex;
     height: 100vh;
 }
+.banner-text{
+    color: white;
+}
 .banner-left{
     flex: 1;
-    color: aliceblue;   
+    color: #121212;   
     display: flex;
     align-items: center;
 
@@ -24,6 +27,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.banner-right img{
+    border-radius: 9px;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -31,7 +37,109 @@ body{
 .banner-titel{
     font-size: 60px;
     white-space: nowrap;
+    position: relative;
 }
 .banner-titel::before{
     content: 'MUSICAL ADDA' ;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: rgb(17, 192, 192);
+    animation: typing 3s linear infinite ;
+}
+.love-music{
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: rgb(17, 192, 192);
+    color: white;
+    border: 4px solid rgb(17, 192, 192);
+    cursor: pointer;
+    transition: 0.3s linear;
+    border-radius: 5px;
+}
+.love-music:hover{
+    background-color: transparent;
+    color: rgb(17, 192, 192);
+}
+@keyframes typing{
+    0%{
+        content: 'M|';
+    }
+    4%{
+        content: 'MU|';
+    }
+    8%{
+        content: 'MUS|';
+    }
+    12%{
+        content: 'MUSI|';
+    }
+    16%{
+        content: 'MUSIC|';
+
+    }
+    20%{
+        content: 'MUSICA|';
+    }
+    24%{
+        content: 'MUSICAL|';
+    }
+    28%{
+        content: 'MUSICAL |';
+    }
+    32%{
+        content: 'MUSICAL A|';
+    }
+    36%{
+        content: 'MUSICAL AD|';
+    }
+    40%{
+        content: 'MUSICAL ADD|';
+    }
+    44%{
+        content: 'MUSICAL ADDA|';
+    }  
+    48%{
+        content: 'MUSICAL ADDA|';
+    }
+    52%{
+        content: 'MUSICAL ADD|';
+    }
+    56%{
+        content: 'MUSICAL AD|';
+    }
+    60%{
+        content: 'MUSICAL A|';
+    }
+    64%{
+        content: 'MUSICAL |';
+    }
+    68%{
+        content: 'MUSICAL|';
+    }
+    72%{
+        content: 'MUSICA|';
+    }
+    76%{
+        content: 'MUSIC|';
+    }
+    80%{
+        content: 'MUSI|';
+    }
+    84%{
+        content: 'MUS|';
+    }
+    88%{
+        content: 'MU|';
+    }
+    92%{
+        content: 'M|';
+    }
+    96%{
+        content: '|';
+    }
+    100%{
+        content: '|';
+    }
 }
